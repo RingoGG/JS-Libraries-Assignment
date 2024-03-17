@@ -1,0 +1,178 @@
+/* Style for Nav */
+.custom-navbar {
+  background-color: #F1F3F2; 
+}
+
+.navbar-nav a {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* slider style */
+.slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Individual slide */
+.slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0; 
+  padding: 0;
+}
+
+/* Image within slide */
+.slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Style for gallery */
+#product-gallery .col-lg-6 {
+  padding: 60px;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  .image__wrapper {
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+    display: flex;
+  }
+
+  .image__wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .swiper {
+    width: 80%;
+  }
+  .container {
+    background-color: #F1F3F2;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+
+  .swiper-container {
+    overflow: hidden;
+  }
+}
+
+#contact {
+  padding: 40px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767.98px) {
+  #slider,
+  #product-gallery,
+  #contact {
+    padding: 20px;
+  }
+
+  .product-enquiry,
+  .contact-info,
+  .social-icons {
+    text-align: center;
+  }
+
+  #product-gallery .col-lg-6 {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  #google-map iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* Media query for screens between 768px and 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #slider,
+  #product-gallery,
+  #contact {
+    padding: 30px;
+  }
+
+  .product-enquiry,
+  .contact-info,
+  .social-icons {
+    text-align: center;
+  }
+
+  #product-gallery .col-lg-6 {
+    padding: 30px;
+    max-width: 100%;
+  }
+
+  #google-map iframe {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+/* Media query for screens between 992px and 1199.98px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #slider,
+  #product-gallery,
+  #contact {
+    padding: 40px;
+  }
+
+  .product-enquiry,
+  .contact-info,
+  .social-icons {
+    text-align: center;
+  }
+
+  #product-gallery .col-lg-6 {
+    padding: 40px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #google-map iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* Media query for screens 1200px and larger */
+@media (min-width: 1200px) {
+  #slider,
+  #product-gallery,
+  #contact {
+    padding: 60px;
+  }
+
+  .product-enquiry,
+  .contact-info,
+  .social-icons {
+    text-align: center;
+  }
+
+  #product-gallery .col-lg-6 {
+    padding: 60px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #google-map iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
